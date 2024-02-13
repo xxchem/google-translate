@@ -5,6 +5,9 @@ Laravel package for Google Translate REST API
 
 Package allows to work with [Google Translate API](https://cloud.google.com/translate/)
 
+Forked from [Google Translate - khaledkhamis](https://github.com/khaledkhamis/google-translate), first by [Rafael Korbaš](https://github.com/refi93/google-translate) to enlarge query message size
+by changing request type to POST and then by [Martin Kňažovič](https://github.com/xxchem) so package can use Guzzle 7. 
+
 ## Installation
 
 Package can be installed using composer by adding to "require" object
