@@ -77,7 +77,7 @@ class Translator
      */
     public function setApiKey($apiKey)
     {
-        if (! $apiKey) {
+        if (!$apiKey) {
             throw new TranslateException('No google api key was provided.');
         }
         $this->apiKey = $apiKey;
@@ -187,15 +187,15 @@ class Translator
      */
     public function translate($text, $autoDetect = true)
     {
-        if (! $this->getTargetLang()) {
+        if (!$this->getTargetLang()) {
             throw new TranslateException('No target language was set.');
         }
 
-        if (! $this->getSourceLang() && $autoDetect) {
+        if (!$this->getSourceLang() && $autoDetect) {
             // Detect language if source language was not provided and auto detect is turned on
             $this->setSourceLang($this->detect($text));
         } else {
-            if (! $this->getSourceLang()) {
+            if (!$this->getSourceLang()) {
                 throw new TranslateException('No source language was set with autodetect turned off.');
             }
         }
